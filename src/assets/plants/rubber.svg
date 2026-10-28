@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="1" x2="0.35" y2="0">
+      <stop offset="0" stop-color="#23442f"/>
+      <stop offset="1" stop-color="#3f7a4f"/>
+    </linearGradient>
+    <linearGradient id="lg2" x1="0" y1="1" x2="0.35" y2="0">
+      <stop offset="0" stop-color="#3f7a4f"/>
+      <stop offset="1" stop-color="#23442f"/>
+    </linearGradient>
+    
+    
+    <linearGradient id="potShade" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#000" stop-opacity="0.16"/>
+    <stop offset="0.4" stop-color="#fff" stop-opacity="0.10"/>
+    <stop offset="1" stop-color="#000" stop-opacity="0.20"/>
+  </linearGradient>
+    <linearGradient id="rimShade" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#000" stop-opacity="0.12"/>
+    <stop offset="0.35" stop-color="#fff" stop-opacity="0.16"/>
+    <stop offset="0.7" stop-color="#fff" stop-opacity="0.02"/>
+    <stop offset="1" stop-color="#000" stop-opacity="0.14"/>
+  </linearGradient>
+    <radialGradient id="bgGlow" cx="0.5" cy="0.32" r="0.75">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="600" fill="#eaece0"/>
+  <rect width="600" height="600" fill="url(#bgGlow)"/>
+  <circle cx="300" cy="300" r="188" fill="#ffffff" opacity="0.28"/>
+  <ellipse cx="300" cy="437" rx="82" ry="12" fill="#3d2c23"/>
+  <ellipse cx="300" cy="434" rx="82" ry="9" fill="#4a362a"/>
+  <path d="M300 442 C 298 360 302 260 300 170" fill="none" stroke="#7d6a4d" stroke-width="9" stroke-linecap="round"/><g transform="translate(236 348) rotate(-62)" opacity="1">
+        <path d="M0 0 C -58 -23.76 -58 -79.92 0 -108 C 58 -79.92 58 -23.76 0 0 Z" fill="url(#lg)"/>
+        <path d="M0 0 C -58 -23.76 -58 -79.92 0 -108 C 58 -79.92 58 -23.76 0 0 Z" fill="none" stroke="#f2d6b8" stroke-opacity="0.35" stroke-width="3"/>
+        <path d="M0 -4 L0 -99.36" stroke="#ffd9b0" stroke-width="3" stroke-linecap="round" opacity="0.4" fill="none"/>
+      </g><g transform="translate(364 330) rotate(60)" opacity="1">
+        <path d="M0 0 C -60 -24.64 -60 -82.88 0 -112 C 60 -82.88 60 -24.64 0 0 Z" fill="url(#lg)"/>
+        <path d="M0 0 C -60 -24.64 -60 -82.88 0 -112 C 60 -82.88 60 -24.64 0 0 Z" fill="none" stroke="#f2d6b8" stroke-opacity="0.35" stroke-width="3"/>
+        <path d="M0 -4 L0 -103.04" stroke="#ffd9b0" stroke-width="3" stroke-linecap="round" opacity="0.4" fill="none"/>
+      </g><g transform="translate(240 262) rotate(-50)" opacity="1">
+        <path d="M0 0 C -54 -22 -54 -74 0 -100 C 54 -74 54 -22 0 0 Z" fill="url(#lg)"/>
+        <path d="M0 0 C -54 -22 -54 -74 0 -100 C 54 -74 54 -22 0 0 Z" fill="none" stroke="#f2d6b8" stroke-opacity="0.35" stroke-width="3"/>
+        <path d="M0 -4 L0 -92" stroke="#ffd9b0" stroke-width="3" stroke-linecap="round" opacity="0.4" fill="none"/>
+      </g><g transform="translate(360 246) rotate(48)" opacity="1">
+        <path d="M0 0 C -56 -22.88 -56 -76.96 0 -104 C 56 -76.96 56 -22.88 0 0 Z" fill="url(#lg)"/>
+        <path d="M0 0 C -56 -22.88 -56 -76.96 0 -104 C 56 -76.96 56 -22.88 0 0 Z" fill="none" stroke="#f2d6b8" stroke-opacity="0.35" stroke-width="3"/>
+        <path d="M0 -4 L0 -95.68" stroke="#ffd9b0" stroke-width="3" stroke-linecap="round" opacity="0.4" fill="none"/>
+      </g><g transform="translate(300 196) rotate(0)" opacity="0.95">
+        <path d="M0 0 C -54 -22.44 -54 -75.48 0 -102 C 54 -75.48 54 -22.44 0 0 Z" fill="url(#lg)"/>
+        <path d="M0 0 C -54 -22.44 -54 -75.48 0 -102 C 54 -75.48 54 -22.44 0 0 Z" fill="none" stroke="#f2d6b8" stroke-opacity="0.35" stroke-width="3"/>
+        <path d="M0 -4 L0 -93.84" stroke="#ffd9b0" stroke-width="3" stroke-linecap="round" opacity="0.4" fill="none"/>
+      </g>
+  <ellipse cx="300" cy="553" rx="126" ry="17" fill="#14231a" opacity="0.13"/>
+  <path d="M214 448 H386 L371 538 Q369 549 358 549 H242 Q231 549 229 538 Z" fill="#b9b7ad"/>
+  <path d="M214 448 H386 L371 538 Q369 549 358 549 H242 Q231 549 229 538 Z" fill="url(#potShade)"/>
+  <rect x="203" y="414" width="194" height="38" rx="11" fill="#c7c5bb"/>
+  <rect x="203" y="414" width="194" height="38" rx="11" fill="url(#rimShade)"/>
+  
+</svg>

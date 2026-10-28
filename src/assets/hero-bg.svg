@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#12281c"/>
+      <stop offset="0.55" stop-color="#1d3b29"/>
+      <stop offset="1" stop-color="#28492f"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.72" cy="0.28" r="0.42">
+      <stop offset="0" stop-color="#f4e3b2" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#f4e3b2" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#f4e3b2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1f16" stop-opacity="0.0"/>
+      <stop offset="1" stop-color="#0b1a12" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="heroA" x1="0" y1="1" x2="0.35" y2="0">
+      <stop offset="0" stop-color="#1b3a24"/>
+      <stop offset="1" stop-color="#3f7a46"/>
+    </linearGradient>
+    <linearGradient id="heroB" x1="0" y1="1" x2="0.35" y2="0">
+      <stop offset="0" stop-color="#16311f"/>
+      <stop offset="1" stop-color="#2f6238"/>
+    </linearGradient>
+    <linearGradient id="heroC" x1="0" y1="1" x2="0.35" y2="0">
+      <stop offset="0" stop-color="#244a2c"/>
+      <stop offset="1" stop-color="#5c9a55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <rect width="1600" height="1000" fill="url(#sun)"/>
+  <circle cx="1150" cy="270" r="210" fill="#f6e7bd" opacity="0.10"/>
+  <circle cx="1150" cy="270" r="120" fill="#f6e7bd" opacity="0.12"/>
+  <!-- big leaves left -->
+  <g transform="translate(-40 940) rotate(-18)" opacity="0.95">
+    <path d="M0 0 C -255 -124 -300 -384.4 -165 -533.2 C -90 -620 0 -570.4 0 -508.4 C 0 -570.4 90 -620 165 -533.2 C 300 -384.4 255 -124 0 0 Z" fill="url(#heroA)"/>
+    <path d="M0 0 L0 -558" stroke="#dff0cf" stroke-width="4" opacity="0.18" fill="none"/>
+  </g>
+  <g transform="translate(150 1010) rotate(22)" opacity="0.9">
+    <path d="M0 0 C -221 -104 -260 -322.4 -143 -447.2 C -78 -520 0 -478.40000000000003 0 -426.4 C 0 -478.40000000000003 78 -520 143 -447.2 C 260 -322.4 221 -104 0 0 Z" fill="url(#heroB)"/>
+    <path d="M0 0 L0 -468" stroke="#dff0cf" stroke-width="4" opacity="0.18" fill="none"/>
+  </g>
+  <g transform="translate(60 700) rotate(-54)" opacity="0.55">
+    <path d="M0 0 C -178.5 -80 -210 -248 -115.50000000000001 -344 C -63 -400 0 -368 0 -328 C 0 -368 63 -400 115.50000000000001 -344 C 210 -248 178.5 -80 0 0 Z" fill="url(#heroC)"/>
+    <path d="M0 0 L0 -360" stroke="#dff0cf" stroke-width="4" opacity="0.18" fill="none"/>
+  </g>
+  <!-- right cluster -->
+  <g transform="translate(1670 1000) rotate(26)" opacity="0.95">
+    <path d="M0 0 C -238 -112 -280 -347.2 -154 -481.59999999999997 C -84 -560 0 -515.2 0 -459.2 C 0 -515.2 84 -560 154 -481.59999999999997 C 280 -347.2 238 -112 0 0 Z" fill="url(#heroB)"/>
+    <path d="M0 0 L0 -504" stroke="#dff0cf" stroke-width="4" opacity="0.18" fill="none"/>
+  </g>
+  <g transform="translate(1520 1040) rotate(-16)" opacity="0.95">
+    <path d="M0 0 C -204 -96 -240 -297.6 -132 -412.8 C -72 -480 0 -441.6 0 -393.59999999999997 C 0 -441.6 72 -480 132 -412.8 C 240 -297.6 204 -96 0 0 Z" fill="url(#heroA)"/>
+    <path d="M0 0 L0 -432" stroke="#dff0cf" stroke-width="4" opacity="0.18" fill="none"/>
+  </g>
+  <g transform="translate(1600 720) rotate(52)" opacity="0.5">
+    <path d="M0 0 C -170 -76 -200 -235.6 -110.00000000000001 -326.8 C -60 -380 0 -349.6 0 -311.59999999999997 C 0 -349.6 60 -380 110.00000000000001 -326.8 C 200 -235.6 170 -76 0 0 Z" fill="url(#heroC)"/>
+    <path d="M0 0 L0 -342" stroke="#dff0cf" stroke-width="4" opacity="0.18" fill="none"/>
+  </g>
+  <!-- hanging vine -->
+  <path d="M1200 0 C 1180 160 1240 260 1210 420 C 1190 530 1250 600 1230 700" stroke="#2f6238" stroke-width="5" fill="none" opacity="0.8"/>
+  <ellipse cx="1200" cy="40" rx="26" ry="18" fill="url(#heroC)" opacity="0.75" transform="rotate(-24 1200 40)"/><ellipse cx="1220.3664996503146" cy="96" rx="26" ry="18" fill="url(#heroC)" opacity="0.75" transform="rotate(24 1220.3664996503146 96)"/><ellipse cx="1225.320038402833" cy="152" rx="26" ry="18" fill="url(#heroC)" opacity="0.75" transform="rotate(-24 1225.320038402833 152)"/><ellipse cx="1211.1118768860795" cy="208" rx="26" ry="18" fill="url(#heroC)" opacity="0.75" transform="rotate(24 1211.1118768860795 208)"/><ellipse cx="1188.4944684743339" cy="264" rx="26" ry="18" fill="url(#heroC)" opacity="0.75" transform="rotate(-24 1188.4944684743339 264)"/><ellipse cx="1174.5842169407074" cy="320" rx="26" ry="18" fill="url(#heroC)" opacity="0.75" transform="rotate(24 1174.5842169407074 320)"/><ellipse cx="1179.9081233235443" cy="376" rx="26" ry="18" fill="url(#heroC)" opacity="0.75" transform="rotate(-24 1179.9081233235443 376)"/><ellipse cx="1200.437161412593" cy="432" rx="26" ry="18" fill="url(#heroC)" opacity="0.75" transform="rotate(24 1200.437161412593 432)"/><ellipse cx="1220.6353644600779" cy="488" rx="26" ry="18" fill="url(#heroC)" opacity="0.75" transform="rotate(-24 1220.6353644600779 488)"/><ellipse cx="1225.2171350819722" cy="544" rx="26" ry="18" fill="url(#heroC)" opacity="0.75" transform="rotate(24 1225.2171350819722 544)"/><ellipse cx="1210.7150806162856" cy="600" rx="26" ry="18" fill="url(#heroC)" opacity="0.75" transform="rotate(-24 1210.7150806162856 600)"/><ellipse cx="1188.1040667618418" cy="656" rx="26" ry="18" fill="url(#heroC)" opacity="0.75" transform="rotate(24 1188.1040667618418 656)"/>
+  <rect y="760" width="1600" height="240" fill="url(#floor)"/>
+  <ellipse cx="800" cy="880" rx="560" ry="60" fill="#0a1710" opacity="0.35"/>
+</svg>

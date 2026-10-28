@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="1" x2="0.35" y2="0">
+      <stop offset="0" stop-color="#3d6b42"/>
+      <stop offset="1" stop-color="#78a463"/>
+    </linearGradient>
+    <linearGradient id="lg2" x1="0" y1="1" x2="0.35" y2="0">
+      <stop offset="0" stop-color="#78a463"/>
+      <stop offset="1" stop-color="#3d6b42"/>
+    </linearGradient>
+    
+    
+    <linearGradient id="potShade" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#000" stop-opacity="0.16"/>
+    <stop offset="0.4" stop-color="#fff" stop-opacity="0.10"/>
+    <stop offset="1" stop-color="#000" stop-opacity="0.20"/>
+  </linearGradient>
+    <linearGradient id="rimShade" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#000" stop-opacity="0.12"/>
+    <stop offset="0.35" stop-color="#fff" stop-opacity="0.16"/>
+    <stop offset="0.7" stop-color="#fff" stop-opacity="0.02"/>
+    <stop offset="1" stop-color="#000" stop-opacity="0.14"/>
+  </linearGradient>
+    <radialGradient id="bgGlow" cx="0.5" cy="0.32" r="0.75">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="600" fill="#f8eef3"/>
+  <rect width="600" height="600" fill="url(#bgGlow)"/>
+  <circle cx="300" cy="300" r="188" fill="#ffffff" opacity="0.28"/>
+  <ellipse cx="300" cy="437" rx="82" ry="12" fill="#3d2c23"/>
+  <ellipse cx="300" cy="434" rx="82" ry="9" fill="#4a362a"/>
+  <path d="M300 428 C 250 420 214 388 200 350 C 244 348 282 378 300 412 Z" fill="url(#lg)"/><path d="M300 428 C 350 420 386 388 400 350 C 356 348 318 378 300 412 Z" fill="url(#lg2)"/><path d="M300 424 C 288 386 272 356 250 332" stroke="#5f7c4c" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M300 428 C 306 380 330 300 382 246 C 404 224 392 196 366 190" stroke="#7c9455" stroke-width="5" fill="none" stroke-linecap="round"/><g transform="translate(382 250) scale(1)">
+        <ellipse cx="0" cy="-34" rx="16" ry="22" fill="#f6e7ef"/>
+        <ellipse cx="0" cy="34" rx="16" ry="22" fill="#f6e7ef"/>
+        <ellipse cx="-32" cy="0" rx="22" ry="15" fill="#fbf1f5" transform="rotate(-12 -32 0)"/>
+        <ellipse cx="32" cy="0" rx="22" ry="15" fill="#fbf1f5" transform="rotate(12 32 0)"/>
+        <circle r="14" fill="#f2c7d8"/>
+        <circle r="8" fill="#e8a9c3"/>
+        <circle cx="-14" cy="-8" r="3.6" fill="#f7e6a8"/>
+        <circle cx="14" cy="-8" r="3.6" fill="#f7e6a8"/>
+      </g><g transform="translate(396 216) scale(0.92)">
+        <ellipse cx="0" cy="-34" rx="16" ry="22" fill="#f6e7ef"/>
+        <ellipse cx="0" cy="34" rx="16" ry="22" fill="#f6e7ef"/>
+        <ellipse cx="-32" cy="0" rx="22" ry="15" fill="#fbf1f5" transform="rotate(-12 -32 0)"/>
+        <ellipse cx="32" cy="0" rx="22" ry="15" fill="#fbf1f5" transform="rotate(12 32 0)"/>
+        <circle r="14" fill="#f2c7d8"/>
+        <circle r="8" fill="#e8a9c3"/>
+        <circle cx="-14" cy="-8" r="3.6" fill="#f7e6a8"/>
+        <circle cx="14" cy="-8" r="3.6" fill="#f7e6a8"/>
+      </g><g transform="translate(366 190) scale(0.86)">
+        <ellipse cx="0" cy="-34" rx="16" ry="22" fill="#f6e7ef"/>
+        <ellipse cx="0" cy="34" rx="16" ry="22" fill="#f6e7ef"/>
+        <ellipse cx="-32" cy="0" rx="22" ry="15" fill="#fbf1f5" transform="rotate(-12 -32 0)"/>
+        <ellipse cx="32" cy="0" rx="22" ry="15" fill="#fbf1f5" transform="rotate(12 32 0)"/>
+        <circle r="14" fill="#f2c7d8"/>
+        <circle r="8" fill="#e8a9c3"/>
+        <circle cx="-14" cy="-8" r="3.6" fill="#f7e6a8"/>
+        <circle cx="14" cy="-8" r="3.6" fill="#f7e6a8"/>
+      </g><circle cx="348" cy="214" r="4.4" fill="#e8a9c3"/><circle cx="336" cy="240" r="3.8" fill="#e8a9c3"/>
+  <ellipse cx="300" cy="553" rx="126" ry="17" fill="#14231a" opacity="0.13"/>
+  <path d="M214 448 H386 L371 538 Q369 549 358 549 H242 Q231 549 229 538 Z" fill="#f0eee6"/>
+  <path d="M214 448 H386 L371 538 Q369 549 358 549 H242 Q231 549 229 538 Z" fill="url(#potShade)"/>
+  <rect x="203" y="414" width="194" height="38" rx="11" fill="#f8f6f0"/>
+  <rect x="203" y="414" width="194" height="38" rx="11" fill="url(#rimShade)"/>
+  
+</svg>

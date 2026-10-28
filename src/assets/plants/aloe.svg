@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="1" x2="0.35" y2="0">
+      <stop offset="0" stop-color="#7d9c4a"/>
+      <stop offset="1" stop-color="#b9cf80"/>
+    </linearGradient>
+    <linearGradient id="lg2" x1="0" y1="1" x2="0.35" y2="0">
+      <stop offset="0" stop-color="#b9cf80"/>
+      <stop offset="1" stop-color="#7d9c4a"/>
+    </linearGradient>
+    
+    
+    <linearGradient id="potShade" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#000" stop-opacity="0.16"/>
+    <stop offset="0.4" stop-color="#fff" stop-opacity="0.10"/>
+    <stop offset="1" stop-color="#000" stop-opacity="0.20"/>
+  </linearGradient>
+    <linearGradient id="rimShade" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#000" stop-opacity="0.12"/>
+    <stop offset="0.35" stop-color="#fff" stop-opacity="0.16"/>
+    <stop offset="0.7" stop-color="#fff" stop-opacity="0.02"/>
+    <stop offset="1" stop-color="#000" stop-opacity="0.14"/>
+  </linearGradient>
+    <radialGradient id="bgGlow" cx="0.5" cy="0.32" r="0.75">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="600" fill="#f2ede0"/>
+  <rect width="600" height="600" fill="url(#bgGlow)"/>
+  <circle cx="300" cy="300" r="188" fill="#ffffff" opacity="0.28"/>
+  <ellipse cx="300" cy="437" rx="82" ry="12" fill="#3d2c23"/>
+  <ellipse cx="300" cy="434" rx="82" ry="9" fill="#4a362a"/>
+  <g transform="translate(300 424) rotate(-86)">
+        <path d="M0 0 C -11 -28.404 -10 -75.74400000000001 0 -94.68 C 10 -75.74400000000001 11 -28.404 0 0 Z" fill="url(#lg)"/>
+        <path d="M0 0 C -11 -28.404 -10 -75.74400000000001 0 -94.68 C 10 -75.74400000000001 11 -28.404 0 0 Z" fill="none" stroke="#e6f2cd" stroke-opacity="0.3" stroke-width="2.5"/>
+      </g><g transform="translate(300 424) rotate(-68.8)">
+        <path d="M0 0 C -11 -31.603199999999998 -10 -84.2752 0 -105.344 C 10 -84.2752 11 -31.603199999999998 0 0 Z" fill="url(#lg)"/>
+        <path d="M0 0 C -11 -31.603199999999998 -10 -84.2752 0 -105.344 C 10 -84.2752 11 -31.603199999999998 0 0 Z" fill="none" stroke="#e6f2cd" stroke-opacity="0.3" stroke-width="2.5"/>
+      </g><g transform="translate(300 424) rotate(-51.6)">
+        <path d="M0 0 C -11 -34.8024 -10 -92.8064 0 -116.008 C 10 -92.8064 11 -34.8024 0 0 Z" fill="url(#lg)"/>
+        <path d="M0 0 C -11 -34.8024 -10 -92.8064 0 -116.008 C 10 -92.8064 11 -34.8024 0 0 Z" fill="none" stroke="#e6f2cd" stroke-opacity="0.3" stroke-width="2.5"/>
+      </g><g transform="translate(300 424) rotate(-34.4)">
+        <path d="M0 0 C -11 -38.001599999999996 -10 -101.33760000000001 0 -126.672 C 10 -101.33760000000001 11 -38.001599999999996 0 0 Z" fill="url(#lg)"/>
+        <path d="M0 0 C -11 -38.001599999999996 -10 -101.33760000000001 0 -126.672 C 10 -101.33760000000001 11 -38.001599999999996 0 0 Z" fill="none" stroke="#e6f2cd" stroke-opacity="0.3" stroke-width="2.5"/>
+      </g><g transform="translate(300 424) rotate(-17.200000000000003)">
+        <path d="M0 0 C -11 -41.2008 -10 -109.86880000000002 0 -137.336 C 10 -109.86880000000002 11 -41.2008 0 0 Z" fill="url(#lg)"/>
+        <path d="M0 0 C -11 -41.2008 -10 -109.86880000000002 0 -137.336 C 10 -109.86880000000002 11 -41.2008 0 0 Z" fill="none" stroke="#e6f2cd" stroke-opacity="0.3" stroke-width="2.5"/>
+      </g><g transform="translate(300 424) rotate(0)">
+        <path d="M0 0 C -11 -44.4 -10 -118.4 0 -148 C 10 -118.4 11 -44.4 0 0 Z" fill="url(#lg)"/>
+        <path d="M0 0 C -11 -44.4 -10 -118.4 0 -148 C 10 -118.4 11 -44.4 0 0 Z" fill="none" stroke="#e6f2cd" stroke-opacity="0.3" stroke-width="2.5"/>
+      </g><g transform="translate(300 424) rotate(17.200000000000003)">
+        <path d="M0 0 C -11 -41.2008 -10 -109.86880000000002 0 -137.336 C 10 -109.86880000000002 11 -41.2008 0 0 Z" fill="url(#lg)"/>
+        <path d="M0 0 C -11 -41.2008 -10 -109.86880000000002 0 -137.336 C 10 -109.86880000000002 11 -41.2008 0 0 Z" fill="none" stroke="#e6f2cd" stroke-opacity="0.3" stroke-width="2.5"/>
+      </g><g transform="translate(300 424) rotate(34.400000000000006)">
+        <path d="M0 0 C -11 -38.001599999999996 -10 -101.33760000000001 0 -126.672 C 10 -101.33760000000001 11 -38.001599999999996 0 0 Z" fill="url(#lg)"/>
+        <path d="M0 0 C -11 -38.001599999999996 -10 -101.33760000000001 0 -126.672 C 10 -101.33760000000001 11 -38.001599999999996 0 0 Z" fill="none" stroke="#e6f2cd" stroke-opacity="0.3" stroke-width="2.5"/>
+      </g><g transform="translate(300 424) rotate(51.599999999999994)">
+        <path d="M0 0 C -11 -34.8024 -10 -92.80640000000001 0 -116.00800000000001 C 10 -92.80640000000001 11 -34.8024 0 0 Z" fill="url(#lg)"/>
+        <path d="M0 0 C -11 -34.8024 -10 -92.80640000000001 0 -116.00800000000001 C 10 -92.80640000000001 11 -34.8024 0 0 Z" fill="none" stroke="#e6f2cd" stroke-opacity="0.3" stroke-width="2.5"/>
+      </g><g transform="translate(300 424) rotate(68.80000000000001)">
+        <path d="M0 0 C -11 -31.603199999999998 -10 -84.2752 0 -105.344 C 10 -84.2752 11 -31.603199999999998 0 0 Z" fill="url(#lg)"/>
+        <path d="M0 0 C -11 -31.603199999999998 -10 -84.2752 0 -105.344 C 10 -84.2752 11 -31.603199999999998 0 0 Z" fill="none" stroke="#e6f2cd" stroke-opacity="0.3" stroke-width="2.5"/>
+      </g><g transform="translate(300 424) rotate(86)">
+        <path d="M0 0 C -11 -28.404 -10 -75.74400000000001 0 -94.68 C 10 -75.74400000000001 11 -28.404 0 0 Z" fill="url(#lg)"/>
+        <path d="M0 0 C -11 -28.404 -10 -75.74400000000001 0 -94.68 C 10 -75.74400000000001 11 -28.404 0 0 Z" fill="none" stroke="#e6f2cd" stroke-opacity="0.3" stroke-width="2.5"/>
+      </g><g transform="translate(300 424) rotate(-60)">
+        <path d="M0 0 C -8.8 -28.799999999999997 -8 -76.80000000000001 0 -96 C 8 -76.80000000000001 8.8 -28.799999999999997 0 0 Z" fill="url(#lg2)"/>
+      </g><g transform="translate(300 424) rotate(-30)">
+        <path d="M0 0 C -8.8 -28.799999999999997 -8 -76.80000000000001 0 -96 C 8 -76.80000000000001 8.8 -28.799999999999997 0 0 Z" fill="url(#lg2)"/>
+      </g><g transform="translate(300 424) rotate(0)">
+        <path d="M0 0 C -8.8 -28.799999999999997 -8 -76.80000000000001 0 -96 C 8 -76.80000000000001 8.8 -28.799999999999997 0 0 Z" fill="url(#lg2)"/>
+      </g><g transform="translate(300 424) rotate(30)">
+        <path d="M0 0 C -8.8 -28.799999999999997 -8 -76.80000000000001 0 -96 C 8 -76.80000000000001 8.8 -28.799999999999997 0 0 Z" fill="url(#lg2)"/>
+      </g><g transform="translate(300 424) rotate(60)">
+        <path d="M0 0 C -8.8 -28.799999999999997 -8 -76.80000000000001 0 -96 C 8 -76.80000000000001 8.8 -28.799999999999997 0 0 Z" fill="url(#lg2)"/>
+      </g>
+  <ellipse cx="300" cy="553" rx="126" ry="17" fill="#14231a" opacity="0.13"/>
+  <path d="M214 448 H386 L371 538 Q369 549 358 549 H242 Q231 549 229 538 Z" fill="#b06a4f"/>
+  <path d="M214 448 H386 L371 538 Q369 549 358 549 H242 Q231 549 229 538 Z" fill="url(#potShade)"/>
+  <rect x="203" y="414" width="194" height="38" rx="11" fill="#be7758"/>
+  <rect x="203" y="414" width="194" height="38" rx="11" fill="url(#rimShade)"/>
+  
+</svg>
