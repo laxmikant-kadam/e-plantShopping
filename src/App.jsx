@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link, Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import ProductList from "./components/ProductList.jsx";
@@ -31,6 +31,17 @@ function ScrollToTop() {
  */
 function LandingPage() {
   const navigate = useNavigate();
+  const [showProductList, setShowProductList] = useState(false);
+
+  useEffect(() => {
+    if (showProductList) {
+      navigate("/plants");
+    }
+  }, [showProductList, navigate]);
+
+  const handleGetStartedClick = () => {
+    setShowProductList(true);
+  };
 
   return (
     <main className="landing">
@@ -44,7 +55,7 @@ function LandingPage() {
             California
           </p>
 
-          <h1 className="landing__title">Paradise Nursery</h1>
+          <h1 className="landing__title">Welcome to Paradise Nursery</h1>
 
           <p className="landing__tagline">
             Bring the outside in — one happy houseplant at a time.
@@ -59,8 +70,8 @@ function LandingPage() {
           <div className="landing__actions">
             <button
               type="button"
-              className="btn btn--primary btn--lg"
-              onClick={() => navigate("/plants")}
+              className="btn btn--primary btn--lg get-started-button"
+              onClick={handleGetStartedClick}
             >
               Get Started
               <span aria-hidden="true">→</span>
@@ -157,7 +168,7 @@ function Footer() {
 
 function App() {
   return (
-    <div className="app">
+    <div className="app-container">
       <ScrollToTop />
       <Navbar />
 
