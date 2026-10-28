@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { plantsByCategory, plants } from "../data/plants.js";
-import { addToCart, selectCartItems } from "../redux/CartSlice.jsx";
+import { addItem, selectCartItems } from "../redux/CartSlice.jsx";
 import { formatPrice } from "../utils/formatPrice.js";
 
 function CheckIcon() {
@@ -54,7 +54,7 @@ function PlantCard({ plant, added, onAdd }) {
         </p>
 
         <div className="plant-card__footer">
-          <span className="plant-card__price">{formatPrice(plant.price)}</span>
+          <span className="plant-card__price">{formatPrice(plant.cost)}</span>
           <button
             type="button"
             className="btn btn--add"
@@ -100,9 +100,9 @@ function ProductList() {
 
   const isInCart = (id) => cartItems.some((item) => item.id === id);
 
-  const handleAdd = (plant) => {
+  const handleAddToCart = (plant) => {
     if (isInCart(plant.id)) return;
-    dispatch(addToCart(plant));
+    dispatch(addItem(plant));
     setNotice(`${plant.name} was added to your cart.`);
   };
 
@@ -149,7 +149,7 @@ function ProductList() {
                 key={plant.id}
                 plant={plant}
                 added={isInCart(plant.id)}
-                onAdd={handleAdd}
+                onAdd={handleAddToCart}
               />
             ))}
           </div>

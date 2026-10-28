@@ -34,6 +34,7 @@ function LandingPage() {
 
   return (
     <main className="landing">
+      <div className="background-image" aria-hidden="true" />
       <div className="landing__scrim" aria-hidden="true" />
 
       <div className="landing__content container">

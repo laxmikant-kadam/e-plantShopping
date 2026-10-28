@@ -2,9 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  decreaseQuantity,
-  increaseQuantity,
-  removeFromCart,
+  removeItem,
+  updateQuantity,
   selectCartItems,
   selectTotalAmount,
   selectTotalQuantity,
@@ -29,105 +28,89 @@ function TrashIcon() {
   );
 }
 
-function CartRow({ item, onIncrease, onDecrease, onRemove }) {
-  return (
-    <article className="cart-row">
-      <div className="cart-row__plant">
-        <div className="cart-row__thumb">
-          <img src={item.image} alt={item.name} />
-        </div>
-        <div className="cart-row__info">
-          <h3>{item.name}</h3>
-          <p className="cart-row__unit">
-            {item.potSize}
-            {item.care ? ` · ${item.care} care` : ""}
-          </p>
-        </div>
-      </div>
-
-      <div className="cart-row__pricing">
-        <span className="cart-row__label">Unit price</span>
-        <span className="cart-row__price">{formatPrice(item.price)}</span>
-      </div>
-
-      <div className="cart-row__qty">
-        <span className="cart-row__label">Quantity</span>
-        <div className="qty-control">
-          <button
-            type="button"
-            className="qty-control__btn"
-            onClick={() => onDecrease(item.id)}
-            aria-label={`Decrease quantity of ${item.name}`}
-          >
-            &minus;
-          </button>
-          <span className="qty-control__value" aria-live="polite">
-            {item.quantity}
-          </span>
-          <button
-            type="button"
-            className="qty-control__btn"
-            onClick={() => onIncrease(item.id)}
-            aria-label={`Increase quantity of ${item.name}`}
-          >
-            +
-          </button>
-        </div>
-      </div>
-
-      <div className="cart-row__line">
-        <span className="cart-row__label">Total</span>
-        <span className="cart-row__line-total">
-          {formatPrice(item.price * item.quantity)}
-        </span>
-      </div>
-
-      <button
-        type="button"
-        className="cart-row__remove"
-        onClick={() => onRemove(item.id)}
-        aria-label={`Remove ${item.name} from cart`}
-      >
-        <TrashIcon />
-        <span>Delete</span>
-      </button>
-    </article>
-  );
-}
-
 /**
- * Shopping cart page: totals for the whole cart and for each plant, quantity
- * controls, delete buttons, a checkout button and a way back to the shop.
+ * Shopping cart page.
+ *
+ * Shows the total cart amount, the total cost of every plant based on its
+ * quantity, the plant image/name/unit price, quantity controls, a delete
+ * button, a checkout message and a link back to the product listing.
  */
 function CartItem() {
   const dispatch = useDispatch();
-  const items = useSelector(selectCartItems);
+  const cart = useSelector(selectCartItems);
   const totalQuantity = useSelector(selectTotalQuantity);
   const totalAmount = useSelector(selectTotalAmount);
   const [checkoutMessage, setCheckoutMessage] = useState("");
 
-  const handleCheckout = () => {
+  // The total cart amount is kept in Redux and updates with every change.
+  const calculateTotalAmount = () => totalAmount;
+
+  // Total cost of one plant: unit cost multiplied by its quantity.
+  const calculateTotalCost = (item) => item.cost * item.quantity;
+
+  const handleIncrement = (item) => {
+    dispatch(
+      updateQuantity({
+        id: item.id,
+        name: item.name,
+        quantity: item.quantity + 1,
+      }),
+    );
+  };
+
+  const handleDecrement = (item) => {
+    if (item.quantity > 1) {
+      dispatch(
+        updateQuantity({
+          id: item.id,
+          name: item.name,
+          quantity: item.quantity - 1,
+        }),
+      );
+    } else {
+      // The quantity would reach zero, so the plant leaves the cart.
+      dispatch(removeItem(item.name));
+    }
+  };
+
+  const handleRemove = (item) => {
+    dispatch(removeItem(item.name));
+  };
+
+  const handleCheckoutShopping = () => {
     setCheckoutMessage(
       "Coming Soon! Checkout isn't available in this demo yet — thanks for shopping at Paradise Nursery. 🌱",
     );
   };
 
-  if (items.length === 0) {
+  const handleContinueShopping = () => {
+    setCheckoutMessage("");
+  };
+
+  if (cart.length === 0) {
     return (
-      <main className="page cart-page container">
-        <div className="cart-empty">
-          <div className="cart-empty__art">
-            <img src={emptyPlant} alt="" />
+      <main className="page cart-page">
+        <div className="cart-container">
+          <div className="container">
+            <div className="cart-empty">
+              <div className="cart-empty__art">
+                <img src={emptyPlant} alt="" />
+              </div>
+              <p className="eyebrow">Your basket</p>
+              <h1>Your cart is empty</h1>
+              <p>
+                Nothing green in here yet. Browse the collection and add a
+                plant or two — your windowsill will thank you.
+              </p>
+              <Link
+                to="/plants"
+                className="btn btn--primary get-started-button"
+                onClick={handleContinueShopping}
+              >
+                Continue Shopping
+              </Link>
+            </div>
           </div>
-          <p className="eyebrow">Your basket</p>
-          <h1>Your cart is empty</h1>
-          <p>
-            Nothing green in here yet. Browse the collection and add a plant or
-            two — your windowsill will thank you.
-          </p>
-          <Link to="/plants" className="btn btn--primary">
-            Continue Shopping
-          </Link>
         </div>
       </main>
     );
@@ -135,8 +118,9 @@ function CartItem() {
 
   return (
     <main className="page cart-page">
-      <div className="container">
-        <div className="cart-head">
+      <div className="cart-container">
+        <div className="container">
+          <div className="cart-head">
           <div>
             <p className="eyebrow">Your basket</p>
             <h1>Shopping Cart</h1>
@@ -157,19 +141,78 @@ function CartItem() {
               <span />
             </div>
 
-            {items.map((item) => (
-              <CartRow
-                key={item.id}
-                item={item}
-                onIncrease={(id) => dispatch(increaseQuantity(id))}
-                onDecrease={(id) => dispatch(decreaseQuantity(id))}
-                onRemove={(id) => dispatch(removeFromCart(id))}
-              />
-            ))}
+            {cart.map((item) => (
+              <article className="cart-item" key={item.name}>
+                <div className="cart-item-plant">
+                  <div className="cart-item-thumb">
+                    <img
+                      className="cart-item-image"
+                      src={item.image}
+                      alt={item.name}
+                    />
+                  </div>
+                  <div className="cart-item-info">
+                    <h3 className="cart-item-name">{item.name}</h3>
+                    <p className="cart-item-pot">
+                      {item.potSize}
+                      {item.care ? ` · ${item.care} care` : ""}
+                    </p>
+                  </div>
+                </div>
 
-            <Link to="/plants" className="btn btn--ghost cart-back">
-              ← Continue Shopping
-            </Link>
+                <div className="cart-item-pricing">
+                  <span className="cart-line-label">Unit price</span>
+                  <span className="cart-item-cost">
+                    {formatPrice(item.cost)}
+                  </span>
+                </div>
+
+                <div className="cart-item-quantity">
+                  <span className="cart-line-label">Quantity</span>
+                  <div className="qty-control">
+                    <button
+                      type="button"
+                      className="qty-control__btn cart-item-button cart-item-button-dec"
+                      onClick={() => handleDecrement(item)}
+                      aria-label={`Decrease quantity of ${item.name}`}
+                    >
+                      &minus;
+                    </button>
+                    <span
+                      className="qty-control__value cart-item-quantity-value"
+                      aria-live="polite"
+                    >
+                      {item.quantity}
+                    </span>
+                    <button
+                      type="button"
+                      className="qty-control__btn cart-item-button cart-item-button-inc"
+                      onClick={() => handleIncrement(item)}
+                      aria-label={`Increase quantity of ${item.name}`}
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+
+                <div className="cart-item-line">
+                  <span className="cart-line-label">Total</span>
+                  <span className="cart-item-total">
+                    Total: {formatPrice(calculateTotalCost(item))}
+                  </span>
+                </div>
+
+                <button
+                  type="button"
+                  className="cart-item-delete"
+                  onClick={() => handleRemove(item)}
+                  aria-label={`Remove ${item.name} from cart`}
+                >
+                  <TrashIcon />
+                  <span>Delete</span>
+                </button>
+              </article>
+            ))}
           </section>
 
           <aside className="cart-summary" aria-label="Order summary">
@@ -178,7 +221,7 @@ function CartItem() {
             <dl className="cart-summary__rows">
               <div>
                 <dt>Plants ({totalQuantity})</dt>
-                <dd>{formatPrice(totalAmount)}</dd>
+                <dd>{formatPrice(calculateTotalAmount())}</dd>
               </div>
               <div>
                 <dt>Delivery</dt>
@@ -186,18 +229,28 @@ function CartItem() {
               </div>
             </dl>
 
-            <div className="cart-summary__total">
-              <span>Total cart amount</span>
-              <strong>{formatPrice(totalAmount)}</strong>
+            <div className="cart-summary__total total_cart_amount">
+              <span>Total Cart Amount</span>
+              <strong>{formatPrice(calculateTotalAmount())}</strong>
             </div>
 
-            <button
-              type="button"
-              className="btn btn--primary btn--block"
-              onClick={handleCheckout}
-            >
-              Checkout
-            </button>
+            <div className="continue_shopping_btn">
+              <Link
+                to="/plants"
+                className="btn btn--ghost cart-back get-started-button"
+                onClick={handleContinueShopping}
+              >
+                ← Continue Shopping
+              </Link>
+
+              <button
+                type="button"
+                className="get-started-button1"
+                onClick={handleCheckoutShopping}
+              >
+                Checkout
+              </button>
+            </div>
 
             {checkoutMessage && (
               <p className="cart-summary__note" role="status">
@@ -211,7 +264,8 @@ function CartItem() {
           </aside>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
   );
 }
 

@@ -28,6 +28,7 @@ export const plants = [
     name: "Monstera Deliciosa",
     category: "tropical",
     price: 34.99,
+    cost: 34.99,
     image: monstera,
     description:
       "Iconic split leaves that bring instant jungle drama to a bright corner.",
@@ -40,6 +41,7 @@ export const plants = [
     name: "Fiddle Leaf Fig",
     category: "tropical",
     price: 49.99,
+    cost: 49.99,
     image: fiddle,
     description:
       "Tall, glossy fiddle-shaped leaves that make a statement in any sunny room.",
@@ -52,6 +54,7 @@ export const plants = [
     name: "Bird of Paradise",
     category: "tropical",
     price: 42.5,
+    cost: 42.5,
     image: bird,
     description:
       "Bold paddle-shaped leaves straight from the tropics, always reaching sunward.",
@@ -64,6 +67,7 @@ export const plants = [
     name: "Philodendron Birkin",
     category: "tropical",
     price: 28.99,
+    cost: 28.99,
     image: philodendron,
     description:
       "Deep green leaves pinstriped in cream, with a new pattern on every leaf.",
@@ -76,6 +80,7 @@ export const plants = [
     name: "Calathea Orbifolia",
     category: "tropical",
     price: 32.0,
+    cost: 32.0,
     image: calathea,
     description:
       "Round, silver-banded leaves that fold up each evening like small hands.",
@@ -88,6 +93,7 @@ export const plants = [
     name: "Rubber Plant",
     category: "tropical",
     price: 26.5,
+    cost: 26.5,
     image: rubber,
     description:
       "Glossy, burgundy-tinged leaves on a strong upright stem. Nearly indestructible.",
@@ -102,6 +108,7 @@ export const plants = [
     name: "Aloe Vera",
     category: "succulents",
     price: 18.99,
+    cost: 18.99,
     image: aloe,
     description:
       "A spiky, soothing classic that thrives on a sunny windowsill and forgives neglect.",
@@ -114,6 +121,7 @@ export const plants = [
     name: "Echeveria Elegans",
     category: "succulents",
     price: 14.5,
+    cost: 14.5,
     image: echeveria,
     description:
       "A dusty-rose rosette that looks hand-painted, happy in the driest spot.",
@@ -126,6 +134,7 @@ export const plants = [
     name: "Golden Barrel Cactus",
     category: "succulents",
     price: 22.0,
+    cost: 22.0,
     image: cactus,
     description:
       "A ribbed golden sphere topped with a bright summer bloom. Zero fuss required.",
@@ -138,6 +147,7 @@ export const plants = [
     name: "Jade Plant",
     category: "succulents",
     price: 16.99,
+    cost: 16.99,
     image: jade,
     description:
       "Coin-shaped leaves on a miniature tree — a classic symbol of good luck.",
@@ -150,6 +160,7 @@ export const plants = [
     name: "String of Pearls",
     category: "succulents",
     price: 19.5,
+    cost: 19.5,
     image: pearls,
     description:
       "Trailing strands of tiny green beads that spill beautifully over a shelf.",
@@ -162,6 +173,7 @@ export const plants = [
     name: "Zebra Haworthia",
     category: "succulents",
     price: 15.99,
+    cost: 15.99,
     image: haworthia,
     description:
       "Zebra-striped spikes in a compact rosette that fits any desk or sill.",
@@ -176,6 +188,7 @@ export const plants = [
     name: "Peace Lily",
     category: "flowering",
     price: 29.99,
+    cost: 29.99,
     image: peace,
     description:
       "Glossy leaves and elegant white spathes; perfectly content in gentle shade.",
@@ -188,6 +201,7 @@ export const plants = [
     name: "Anthurium",
     category: "flowering",
     price: 34.5,
+    cost: 34.5,
     image: anthurium,
     description:
       "Waxy heart-shaped blooms in deep red that last for weeks, almost year-round.",
@@ -200,6 +214,7 @@ export const plants = [
     name: "Phalaenopsis Orchid",
     category: "flowering",
     price: 39.99,
+    cost: 39.99,
     image: orchid,
     description:
       "Long-lasting moth orchids on a graceful arch — the easiest orchid to love.",
@@ -212,6 +227,7 @@ export const plants = [
     name: "African Violet",
     category: "flowering",
     price: 21.5,
+    cost: 21.5,
     image: violet,
     description:
       "Velvety leaves and clusters of violet blooms that repeat through the year.",
@@ -224,6 +240,7 @@ export const plants = [
     name: "Bromeliad Guzmania",
     category: "flowering",
     price: 27.99,
+    cost: 27.99,
     image: bromeliad,
     description:
       "A fiery star of bracts rising from a rosette of strappy green leaves.",
@@ -236,6 +253,7 @@ export const plants = [
     name: "Kalanchoe",
     category: "flowering",
     price: 23.5,
+    cost: 23.5,
     image: kalanchoe,
     description:
       "Cheerful clusters of pink flowers above scalloped leaves, weeks at a time.",
