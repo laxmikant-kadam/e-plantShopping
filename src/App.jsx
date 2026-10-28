@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, Route, Routes, useLocation, useNavigate } from "react-router-dom";
-import Navbar from "./components/Navbar.jsx";
-import ProductList from "./components/ProductList.jsx";
+import ProductList, { Navbar } from "./components/ProductList.jsx";
 import CartItem from "./components/CartItem.jsx";
 import AboutUs from "./components/AboutUs.jsx";
 import monstera from "./assets/plants/monstera.svg";
@@ -167,10 +166,12 @@ function Footer() {
 }
 
 function App() {
+  const { pathname } = useLocation();
+
   return (
     <div className="app-container">
       <ScrollToTop />
-      <Navbar />
+      {pathname !== "/plants" && <Navbar />}
 
       <Routes>
         <Route path="/" element={<LandingPage />} />
