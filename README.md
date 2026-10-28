@@ -1,11 +1,14 @@
-# Paradise Nursery — Shopping Cart Application
+# e-plantShopping — Paradise Nursery Shopping Cart Application
 
-A dynamic, single-page shopping cart built for **Paradise Nursery**, an online
-houseplant shop. Customers browse nursery-grown plants by category, read the
-details of each plant, add them to a Redux-powered cart and manage quantities,
-line totals and the overall basket total before checking out.
+**e-plantShopping** is the final course project: a dynamic, single-page shopping
+cart built for **Paradise Nursery**, an online houseplant shop. Customers browse
+nursery-grown plants by category, read the details of each plant, add them to a
+Redux-powered cart and manage quantities, line totals and the overall basket
+total before checking out.
 
-> **Project name:** Paradise Nursery — Shopping Cart Application
+> **Project name:** e-plantShopping
+>
+> **Application:** Paradise Nursery — Shopping Cart Application
 >
 > **Type:** React single-page e-commerce demo (final course project)
 >
@@ -29,8 +32,12 @@ line totals and the overall basket total before checking out.
 
 ## About the project
 
+**Project name: e-plantShopping** — a Paradise Nursery shopping cart built with
+React, Redux Toolkit and React Router.
+
 Paradise Nursery is a fictional plant nursery in Half Moon Bay, California.
-This project recreates its storefront as a client-side React application:
+This e-plantShopping project recreates its storefront as a client-side React
+application:
 
 - a landing page that introduces the nursery,
 - a product listing with **18 houseplants in 3 categories** (six per category),
@@ -126,7 +133,7 @@ The app has no environment variables or external services; `npm install` and
 ## Project structure
 
 ```
-paradise-nursery/
+e-plantShopping/
 ├── index.html
 ├── package.json
 ├── vite.config.js
